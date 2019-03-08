@@ -1,23 +1,25 @@
-# Default, Defaults
-markdown: redcarpet
-highlighter: pygments # or rouge or null
-exclude: ["node_modules", "gulpfile.js", "package.json"]
-
-# Jekyll Defaults
-title: Artist Theme
+# Site settings
+# in the templates available like {{ site.myvariable }}.
+title: Clean portfolio theme for Jekyll powered by Bootstrap 4.
 email: your-email@domain.com
-description: A small and simple site I made to test out Jekyll. Watch out! I'm going to make a material design theme next!
-baseurl: "http://localhost:3000" # the subpath of your site, e.g. /blog
+brand: Your Name
+headline: Inventor, Engineer and Futurist
+description: > # this means to ignore newlines until "baseurl:"
+  New Site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://example.com" # the base hostname & protocol for your site
+copyright: 2016 Whatever Company, Inc. All Rights Reserved.
 
-# Where can people find your site?
-url: "http://localhost:3000"
-# When developing, set this ^ equal to whatever localhost you're using
+# Build settings
+markdown: kramdown
 
-# Socail Media links
-# Use these to link users to your organization's social media sites
-twitter:
-facebook:
-google:
+# Account ids
+snapwidget: 247552
 
-author: Nina Petropoulos
-authorBio: A English major by day, a musician by night, and a web developer because of the summer I was bored - my name's Nina and I hope you enjoy my Hello Portland theme, the second theme I've made with Jekyll.
+# Contacts
+email: your.name@gmail.com
+phone: +1-800-555-2016
+
+# Tracking
+googleAnalitycsID: UA-83933844-1
+
