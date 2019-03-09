@@ -1,80 +1,126 @@
-# Jekyll Instagram Portfolio Theme
+# Space Jekyll
 
-Clean, minimalistic and responsive portfolio theme for Jekyll powered by Bootstrap 4.
-For the portfolio section is used Instagram widget, but you can easily update it with another content source.
+A simple and elegant Jekyll theme based on Spacemacs. The theme works well on mobile devices as well.
 
-## Live Demo
+See a live demo [here](https://victorvoid.github.io/space-jekyll-template/).
 
-https://portfolio-central.github.io/jekyll-instagram-portfolio-theme/
-![Jekyll Instagram Portfolio Theme](./screenshot.png "Jekyll Instagram Portfolio Theme")
+![](https://github.com/victorvoid/space-jekyll-template/blob/master/screenshot.png?raw=true)
 
-## Showcase
+# Site/User Settings
 
-The best usage examples:
+customize your site in ``_config.yml``
 
-- [Pavel Guzenko](http://guzenko.org.ua)
-- [Victor Mikitenko](https://mikitenko-org-ua.github.io/site/)
-- [Anthony Fuentes](http://anthonyfuentes.us/)
-- [Serhii Grytsyshyn](https://grserhii.github.io/)
+```ruby
 
-To add your example: fork the repo, add new line to the list above and create a pull request.
+# Site settings
+description: A blog about lorem ipsum
+baseurl: "" # the subpath
+url: "" # the base hostname &/|| protocol for your site
 
-## Featured on
-
-- [Template.net](https://www.template.net/cms-templates/jekyll/jekyll-themes-templates/)
-- [JekyllThemes.org](http://jekyllthemes.org/themes/instagram-portfolio-theme/)
-
-## Powered by
-
-- [Jekyll](https://jekyllrb.com/)
-- [Bootstrap 4](http://v4-alpha.getbootstrap.com/)
-- [jQuery](https://jquery.com/)
-- [SnapWidget](https://snapwidget.com)
-- [Google Fonts: Lobster](https://fonts.google.com/specimen/Lobster)
-- [Font Awesome](http://fontawesome.io/)
-
-## Installation
-Install Jekyll:
+# User settings
+username: Lorem Ipsum
+user_description: Lorem Developer
+user_title: Lorem Ipsum
+email: lorem@ipsum.com
+twitter_username: loremipsum
+github_username:  loremipsum
+gplus_username:  loremipsum
+disqus_username: loremipsum
 
 ```
-gem install jekyll bundler
+
+See more about project and links in [_config.yml](./_config.yml)
+
+## How to create a post ?
+
+_posts create a file .md with structure:
+
+```md
+---
+layout: post
+title: "Lorem ipsum speak.."
+date: 2016-09-13 01:00:00
+image: '/assets/img/post-image.png'
+description: 'about tech'
+tags:
+- lorem
+- tech
+categories:
+- Lorem ipsum
+twitter_text: 'How to speak with Lorem'
+---
 ```
 
-Install bundle dependiencies:
+## How to insert new links on menu navigation ?
 
-```
-bundle install
-```
+![](https://github.com/victorvoid/space-jekyll-template/blob/master/src/img/menu.png)
 
-When finished, run the dev server:
+You should open `_config.yml` and change/add `links` section:
 
-```
-bundle exec jekyll serve
-```
-
-or just:
-
-```
-jekyll serve
-
-```
-To stop the server, use `CTRL+C`.
-
-## Building front-end assets: styles and scripts
-
-Install module dependencies:
-
-```
-npm install
+```yaml
+links:
+  section_1: # you can use any name
+    - title: home # show on menu
+      url: / #link
+      key_trigger: 1 # link shortcut and show on the left of the title
+    - title: my posts
+      url: /posts
+      key_trigger: 2
+    - title: series
+      url: /series
+      key_trigger: 3
+    - title: tags
+      url: /tags
+      key_trigger: 4
+    - title: about me
+      url: /about
+      key_trigger: 5
 ```
 
-Run the build script to generate updated front-end assets:
+Frontend Technologies
+---------------------
+* [Gulp](https://gulpjs.com/): The streaming build system.
+* [Stylus](http://stylus-lang.com/): expressive, dynamic, robust CSS.
+* [BrowserSync](https://www.browsersync.io/): Time-saving synchronised browser testing.
+* [Rupture](https://github.com/jescalan/rupture): Simple media queries for stylus.
+* [Kouto-Swiss](http://kouto-swiss.io/): A complete CSS framework for Stylus.
+* [Jeet](http://jeet.gs/): A grid system for human.
+* [Zepto.js](http://zeptojs.com/): The aerogel-weight jQuery-compatible JavaScript library.
 
-```
-npm run build
-```
+## How can I modify the theme ?
 
-Watch for changes and automatically rebuild assets (`CTRL+C` to stop):
-```
-npm run watch
-```
+First, install [jekyll](https://jekyllrb.com/) and [node.js](https://nodejs.org/).
+
+1. Fork the theme with your username, example: `charlie.github.io`
+2. Clone repository to your computer
+3. run `npm install`
+4. run `gulp`
+5. Be happy by modifying the files
+
+**Space Jekyll** uses the [Stylus](http://stylus-lang.com/) to process his css, then modifies the style of the theme in [this folder](https://github.com/victorvoid/space-jekyll-template/tree/master/src/styl).
+
+You can go in the [variable.styl](https://github.com/victorvoid/space-jekyll-template/blob/master/src/styl/_variables.styl) and modify the colors. 
+
+
+## License
+The MIT License (MIT)
+
+Copyright (c) 2016 Victor Igor
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
