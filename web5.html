@@ -7,6 +7,7 @@
 body {
 	background-image: url(images/IMG_20190315_153749.jpg);
 	font-family: "楷体";
+	line-height: 1mm;
 }
 .ziti {
 	font-size: 24px;
@@ -17,13 +18,36 @@ body {
 
 <body>
 <div align="right">
-  <p>
-    <object classid="clsid:166B1BCA-3F9C-11CF-8075-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/director/sw.cab#version=10,1,1,0" width="8" height="13" title="音乐">
-      <param name="src" value="camera.flv/一修 - 一曲相思 (Live) [mqms2].mp3" />
-      <embed src="camera.flv/一修 - 一曲相思 (Live) [mqms2].mp3" pluginspage="http://www.adobe.com/shockwave/download/" width="8" height="13"></embed>
-    </object>
-  </p>
-  <p><a href="index.htm">返回</a></p>
+  <form id="form1" name="form1" method="post" action="">
+    <p align="left">
+      <label> </label>
+    您对网站的评价：</p>
+    <p align="left">
+      <label>
+        <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_0" />
+        优秀</label>
+      <br />
+      <label>
+        <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_1" /> 
+        感觉还行
+      </label>
+      <br />
+      <label>
+        <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_2" /> 
+        普普通通
+      </label>
+      <br />
+      <label>
+        <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_3" /> 
+        还需加油
+      </label>
+    </p>
+    <p align="left">
+      <label for="感谢您的建议">建议</label>
+      <input type="text" name="感谢您的建议" id="感谢您的建议" />
+    </p>
+    <p align="left"><a href="index.htm" target="-blank">返回</a> </p>
+  </form>
 </div>
 </body>
 </html>
