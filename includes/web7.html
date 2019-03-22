@@ -10,9 +10,9 @@ body {
 }
 .z {
 	font-family: "华文楷体";
-	font-size: xx-large;
+	font-size: 100px;
 	color: #003;
-	line-height: 0mm;
+	line-height: normal;
 	font-style: italic;
 	font-weight: 900;
 	font-variant: normal;
@@ -37,12 +37,21 @@ a:hover {
 a:active {
 	text-decoration: none;
 }
+#apDiv1 {
+	position: absolute;
+	width: 600px;
+	height: 115px;
+	z-index: 1;
+	left: 458px;
+	top: 0px;
+}
 </style>
 </head>
 
 <body class="z">
-  <p align="center" class="z"><span class="si"><span class="z">旭&nbsp;&nbsp;&nbsp;日&nbsp;&nbsp;&nbsp;东&nbsp;&nbsp;&nbsp;升</span></span></p>
-  <hr />
-<p align="center" class="si"><a href="web1.html" target="-blank">网站首页‖友情链接</a>‖<a href="../web1.html">友情链接</a>‖<a href="../web1.html">友情链接</a></p>
+<p align="center" style="position:fixed" class="z">&nbsp;</p>
+  <div id="apDiv1">
+    <div align="center">旭日东升</div>
+  </div>
 </body>
 </html>
